@@ -1,6 +1,6 @@
 # 🧳 AI Travel Planner Agent
 
-An AI-powered trip planning assistant built using the **LangChain** framework.  
+An AI-powered trip planning assistant built using the **LangGraph** framework.  
 This agent can help you plan your trip, suggest itineraries, and manage your travel preferences.
 
 ---

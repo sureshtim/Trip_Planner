@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🧳 AI Travel Planner Agent
 
 An AI-powered trip planning assistant built using the **LangChain** framework.  
@@ -32,6 +31,3 @@ uvicorn main:app --reload --port 8000
 **Run Streamlit frontend:**
 ```bash
 streamlit run streamlit_app.py
-=======
-# AI_Trip_Planner
->>>>>>> personal_repo/main

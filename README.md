@@ -26,6 +26,10 @@ This agent can help you plan your trip, suggest itineraries, and manage your tra
 
 **Run FastAPI backend:**
 uvicorn main:app --reload --port 8000
+or
+python -m uvicorn main:app --reload --port 8000
 
 **Run Streamlit frontend:**
 streamlit run streamlit_app.py
+or
+python -m streamlit run streamlit_app.py

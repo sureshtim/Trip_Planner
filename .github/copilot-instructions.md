@@ -237,7 +237,7 @@ TAVILY_API_KEY=your_tavily_key
 ---
 
 ## 🔗 Related Documentation
-- [README.md](../../README.md) – Project overview and quick start  
+- [README.md](../README.md) – Project overview and quick start  
 - [LangGraph Docs](https://langchain-ai.github.io/langgraph/) – Agent workflow patterns  
 - [FastAPI Docs](https://fastapi.tiangolo.com/) – API development  
 - [Streamlit Docs](https://docs.streamlit.io/) – Frontend development  

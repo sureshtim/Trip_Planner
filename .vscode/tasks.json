@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Activate venv & Run Backend",
+            "type": "shell",
+            "command": "source .venv/bin/activate && python -m uvicorn main:app --reload --port 8000",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Activate venv & Run Streamlit",
+            "type": "shell",
+            "command": "source .venv/bin/activate && python -m streamlit run streamlit_app.py",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Install Dependencies",
+            "type": "shell",
+            "command": "source .venv/bin/activate && uv pip install -r requirements.txt",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

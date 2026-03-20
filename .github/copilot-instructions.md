@@ -53,8 +53,8 @@ source env/bin/activate  # macOS/Linux
 # OR: env\Scripts\activate  # Windows
 
 # Install dependencies
-uv pip install -r requirements.txt
-# OR: pip install -r requirements.txt
+uv pip install -e .
+# OR: pip install -e .
 
 # Verify installation
 python -c "import langgraph; import streamlit; import fastapi; print('✅ All imports OK')"

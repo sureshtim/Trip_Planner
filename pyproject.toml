@@ -1,11 +1,31 @@
 [project]
 name = "ai-trip-planner"
 version = "0.1.0"
-description = "Add your description here"
+description = "AI-powered travel planning agent with real-world data integration"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "black>=26.3.1",
-    "pandas>=2.3.0",
-    "ruff>=0.15.7",
+    "langchain",
+    "langchain-community",
+    "langchain-experimental",
+    "fastapi",
+    "python-dotenv",
+    "streamlit",
+    "uvicorn",
+    "pydantic",
+    "httpx",
+    "requests",
+    "langchain-google-community",
+    "langchain-tavily",
+    "langchain-groq",
+    "langchain-openai",
+    "langgraph",
+    "PyYAML"
 ]
+
+[tool.setuptools.packages.find]
+exclude = ["notebook*"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

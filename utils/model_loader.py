@@ -11,9 +11,10 @@ class ConfigLoader:
     def __init__(self):
         print(f"Loaded config.....")
         self.config = load_config()
-    
+
     def __getitem__(self, key):
         return self.config[key]
+
 
 class ModelLoader(BaseModel):
     model_provider: Literal["groq", "openai"] = "groq"
@@ -21,14 +22,15 @@ class ModelLoader(BaseModel):
 
     def model_post_init(self, __context: Any) -> None:
         self.config = ConfigLoader()
-    
+
     class Config:
         arbitrary_types_allowed = True
-    
+
     def load_llm(self):
         """
         Load and return the LLM model.
         """
+        load_dotenv()  # Load environment variables
         print("LLM loading...")
         print(f"Loading model from provider: {self.model_provider}")
         if self.model_provider == "groq":
@@ -59,5 +61,5 @@ class ModelLoader(BaseModel):
             openai_api_key = os.getenv("OPENAI_API_KEY")
             model_name = self.config["llm"]["openai"]["model_name"]
             llm = ChatOpenAI(model_name=model_name, api_key=openai_api_key)
-        
+
         return llm
